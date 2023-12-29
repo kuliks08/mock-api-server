@@ -1,0 +1,35 @@
+[
+{
+    "routes": {
+        "GET /users": {
+            "responseCode": 200,
+            "responseData": {
+                "users": [
+                    {"id": 1, "name": "John Doe"},
+                    {"id": 2, "name": "Jane Smith"}
+                ]
+            }
+        },
+        "POST /users": {
+            "responseCode": 201,
+            "responseData": {"message": "User created successfully"},
+            "token": "your_secret_token"
+        },
+        "GET /profile": {
+            "responseCode": 200,
+            "responseData": {"username": "johndoe"},
+            "token": "another_secret_token"
+        },
+        "GET /products": {
+            "responseCode": 200,
+            "responseFile": "/sample_files/products.json",
+            "token": "your_token"
+        },
+        "PUT /products/123": {
+            "responseCode": 200,
+            "responseData": {"message": "Product updated successfully"},
+            "token": "your_token"
+        }
+    }
+}
+]
